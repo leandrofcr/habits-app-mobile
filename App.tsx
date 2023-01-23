@@ -10,14 +10,14 @@ import {
 import { Loading } from "./src/components/Loading";
 
 export default function App() {
-  const [fonstLoaded] = useFonts({
+  const [fontsLoaded] = useFonts({
     Inter_400Regular,
     Inter_600SemiBold,
     Inter_700Bold,
     Inter_800ExtraBold,
   });
 
-  if (!fonstLoaded) {
+  if (!fontsLoaded) {
     return <Loading />;
   }
 
